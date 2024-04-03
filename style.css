@@ -1,0 +1,174 @@
+@import url(https://fonts.google.com/specimen/Inter);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+}
+.link li {
+  list-style: none;
+  color: white;
+}
+.link a {
+  text-decoration: none;
+}
+
+.container {
+  width: 500px;
+  height: 600px;
+  max-width: 400px;
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.avatar {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-details {
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.text {
+  width: 100%;
+  margin: auto;
+}
+
+.text span {
+  font-size: 1.2rem;
+  color: hsl(75, 94%, 57%);
+}
+
+.text h3 {
+  color: white;
+}
+
+.text p {
+  font-size: 16px;
+  padding-top: 13px;
+  color: hsl(0, 0%, 100%);
+}
+
+.link {
+  border-radius: 5px;
+  text-transform: capitalize;
+  width: 300px;
+  height: 40px;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin: 15px;
+  font-weight: 500;
+}
+
+.link:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+  box-shadow: 2px 2px 2px 2px rgb(85, 85, 38);
+}
+
+.link li:hover {
+  color: black;
+}
+
+.link li {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+    height: 550px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .text h2 {
+    font-size: 1.7rem;
+  }
+
+  .text span {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .link {
+    width: 250px;
+    height: 40px;
+    margin: 15px;
+  }
+}
+@media (max-width: 290px) {
+  .container {
+    width: 230px;
+    height: 550px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+  }
+
+  .text h2 {
+    font-size: 1.7rem;
+  }
+
+  .text span {
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .link {
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+  }
+  .avatar {
+    margin-top: 20px;
+    width: 70px;
+  }
+}
